@@ -1,0 +1,72 @@
+.header
+    &-top
+        &__img
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            width: 100%
+            z-index: 2
+        &__contacts
+            display: flex
+            align-items: center
+        &__top
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-bottom: 30px
+    &-contacts
+        &__phone
+            font-size: 1.4667em
+            text-transform: uppercase
+            margin-right: 24px
+            color: #ffffff
+        &__btn
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 157px
+            height: 26px
+            background: #f78f1e
+            color: #030216
+            border-radius: 5px
+            font-size: 0.8667
+            & i
+                color: #06041b
+                opacity: 0.44
+                margin-right: 7px
+                transform: scaleX(-1) rotate(30deg)
+    &-logo
+        display: flex
+        align-items: flex-end
+        margin-right: 50px
+        width: 222px
+        & img
+            max-width: 100%
+    &-menu
+        margin: 0
+        padding: 0
+        display: flex
+        align-items: center
+        justify-content: space-between
+        & li
+            margin-right: 57px
+            font-size: 1.0667
+            font-family: 'Proxima Nova Lt'
+            font-weight: 600
+            &:last-of-type
+                margin-right: 0
+            & a
+                color: #ffffff
+    &-lang
+        display: flex
+        &__img
+            margin-right: 8px
+        &__link
+            color: #ffffff
+            opacity: 0.3
+            text-transform: uppercase
+            &.active
+                opacity: 1
+            &:first-of-type
+                margin-right: 4px

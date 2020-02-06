@@ -1,0 +1,71 @@
+
+body
+    font-family: 'Proxima Nova Lt'
+    font-size: 15px
+    font-weight: 600
+
+.main
+    &-title
+        font-size: 5.334em
+        line-height: 77.29px
+        font-family: 'Proxima Nova Th'
+        font-weight: 800
+        line-height: 77.29px
+        text-align: center
+        margin-bottom: 53px
+    &-slider
+        z-index: 3
+        padding-bottom: 160px
+        & .slick-dots
+            position: absolute
+            bottom: 0
+            left: 0
+            right: 0
+            width: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            & li
+                width: 13px
+                height: 13px
+                border-radius: 50%
+                background: #70707a
+                cursor: pointer
+                margin-right: 10px
+                margin-left: 10px
+                transition: 0.3s
+                &.slick-active
+                    background: #f78f1e
+                & button
+                    display: none
+
+.button
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #ffffff
+    border: 2px solid #f78f1e
+    border-radius: 5px
+    width: 245px
+    font-size: 1.2667em
+    height: 53px
+
+.main-btn
+    margin: auto
+
+.title
+    font-size: 3.1334em
+    color: #ffffff
+    font-family: 'Proxima Nova Cn Bl'
+    font-weight: 900
+    margin-bottom: 25px
+
+@import "normalize";
+@import "wrapper";
+@import "container";
+@import "title";
+@import "header";;
+@import "footer";
+@import "services";
+@import "park";
+@import "about";

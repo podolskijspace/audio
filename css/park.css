@@ -1,0 +1,37 @@
+.park-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.park-item__img {
+  min-width: 261px;
+  height: 161px;
+  background: url(../img/park-layover.png) no-repeat center bottom;
+  position: relative;
+  overflow: visible;
+}
+
+.park-item__img img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.park-item:nth-child(4) img {
+  right: 25px;
+}
+
+.park-item__title {
+  font-size: 1.8em;
+  line-height: 1.1em;
+  width: min-content;
+  margin: 15px 0 10px;
+}
+
+.park-item__subtitle {
+  font-size: 1em;
+  font-family: 'Proxima Nova Rg';
+  color: #b8b8cd;
+  opacity: 0.9;
+  margin: 0;
+}

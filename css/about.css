@@ -1,0 +1,18 @@
+.about__intro {
+  font-family: 'Proxima Nova Th';
+  font-size: 2.1334em;
+  line-height: 1.1em;
+  font-weight: 100;
+}
+
+.about__text {
+  margin: 0 0 40px;
+  font-family: 'Proxima Nova Rg';
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.about__text_margin {
+  margin: 0;
+}
