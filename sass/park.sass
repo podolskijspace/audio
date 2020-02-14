@@ -1,7 +1,11 @@
+@import "media";
 .park
     &-block
         display: flex
         justify-content: space-between
+        @media (max-width: $media-pc)
+            flex-direction: column
+            justify-content: space-around
     &-item
         &__img
             min-width: 261px
@@ -13,16 +17,36 @@
                 position: absolute
                 bottom: 0
                 right: 0
+                @media (max-width: $media-pc)
+                    left: 50%
+        &:nth-child(1) img
+            @media (max-width: $media-pc)
+                transform: translateX(-75px)
+        &:nth-child(2) img
+            @media (max-width: $media-pc)
+                transform: translateX(-73px)
+        &:nth-child(3) img
+            @media (max-width: $media-pc)
+                transform: translateX(-90px)
         &:nth-child(4) img
             right: 25px
+            @media (max-width: $media-pc)
+                transform: translateX(-50px)
         &__title
             font-size: 1.8em
             line-height: 1.1em
             width: min-content
             margin: 15px 0 10px
+            @media (max-width: $media-pc)
+                text-align: center
+                width: 100%
         &__subtitle
             font-size: 1em
             font-family: 'Proxima Nova Rg'
+            font-weight: 400
             color: #b8b8cd
             opacity: 0.9
             margin: 0
+            @media (max-width: $media-pc)
+                text-align: center
+                width: 100%

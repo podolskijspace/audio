@@ -1,0 +1,63 @@
+@import "media";
+.portf
+    &-info
+        max-width: 822px
+        @media (max-width: $media-pc)
+            margin: 0px auto
+    &-title
+        margin: 0
+        font-size: 3.1334em
+        line-height: 46px
+        max-width: 60%
+        @media (max-width: $media-pc)
+            max-width: 100%
+            text-align: center
+            margin: 0px auto 15px
+    &-subtitle
+        font-size: 2.13334
+        font-weight: 300
+        line-height: 37px
+        color: #b8b8cd
+        font-family: 'Proxima Nova Cn Lt'
+        margin-bottom: 30px
+        @media (max-width: $media-pc)
+            text-align: center
+            line-height: 15px
+            margin-bottom: 10px
+    &-desc
+        line-height: 24px
+        font-weight: 400
+        margin: 0
+        @media (max-width: $media-pc)
+            text-align: center
+            line-height: 12px
+    &-count
+        display: flex
+        align-items: center
+        height: 26px
+        font-size: 2.4em
+        position: relative
+        bottom: 8px
+        @media (max-width: $media-pc)
+            margin: 15px auto
+        &__arrow
+            font-size: 1.0667
+            color: #f78f1e
+        &__prev
+            margin-right: 10px
+        &__next
+            margin-left: 10px
+        &__all
+            color: #b8b8cd
+    &-head
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+        margin-bottom: 26px
+        @media (max-width: $media-pc)
+            flex-direction: column
+            justify-content: space-around
+    &-slider
+        &__img
+            max-width: 100%
+            margin-bottom: 32px

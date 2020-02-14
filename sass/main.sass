@@ -1,8 +1,11 @@
-
+@import "media";
 body
     font-family: 'Proxima Nova Lt'
     font-size: 15px
     font-weight: 600
+    position: relative
+    @media (max-width: $media-mpc)
+        font-size: 12px
 
 .main
     &-title
@@ -13,9 +16,14 @@ body
         line-height: 77.29px
         text-align: center
         margin-bottom: 53px
+        @media (max-width: $media-mpc)
+            font-size: 3em
+            line-height: 1.05em
     &-slider
         z-index: 3
         padding-bottom: 160px
+        @media (max-width: $media-mpc)
+            padding-bottom: 0
         & .slick-dots
             position: absolute
             bottom: 0
@@ -59,7 +67,47 @@ body
     font-family: 'Proxima Nova Cn Bl'
     font-weight: 900
     margin-bottom: 25px
+    @media (max-width: $media-pc)
+        text-align: center
+        margin-bottom: 8px
+.main-slider
+    .slick-dots
+        bottom: -20px
 
+
+.bars
+    width: 100%
+    max-width: 410px
+    transform: translateX(100%)
+    background: #b8b8cd
+    height: 100vh
+    position: fixed
+    right: 0
+    top: 0
+    z-index: 1000
+    display: flex
+    justify-content: space-around
+    flex-direction: column
+    transition: 0.3s
+    &_active
+        transform: translateX(0)
+    &-menu
+        width: min-content
+        margin: 0px auto
+        &__item
+            margin-bottom: 15px
+            text-align: center
+            & a
+                &:hover
+                    color: #ffffff
+    & svg
+        position: absolute
+        right: 15px
+        top: 15px
+        fill: #190b02
+        &:hover
+            cursor: pointer
+            fill: #ffffff
 @import "normalize";
 @import "wrapper";
 @import "container";
@@ -69,3 +117,7 @@ body
 @import "services";
 @import "park";
 @import "about";
+@import "service";
+@import "equipments";
+@import "portf";
+@import "single";

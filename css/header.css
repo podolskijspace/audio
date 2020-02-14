@@ -1,3 +1,20 @@
+.header-menuIcon::before {
+  display: none;
+}
+
+@media (max-width: 990px) {
+  .header-menuIcon {
+    font-size: 20px;
+  }
+  .header-menuIcon::before {
+    display: block;
+  }
+}
+
+.header-menuIcon:hover {
+  cursor: pointer;
+}
+
 .header-top__img {
   position: absolute;
   top: 0;
@@ -12,11 +29,23 @@
   align-items: center;
 }
 
+@media (max-width: 990px) {
+  .header-top__contacts {
+    flex-direction: column;
+  }
+}
+
 .header-top__top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 990px) {
+  .header-top__top {
+    justify-content: space-around;
+  }
 }
 
 .header-contacts__phone {
@@ -24,6 +53,12 @@
   text-transform: uppercase;
   margin-right: 24px;
   color: #ffffff;
+}
+
+@media (max-width: 990px) {
+  .header-contacts__phone {
+    margin-right: 0;
+  }
 }
 
 .header-contacts__btn {
@@ -35,7 +70,7 @@
   background: #f78f1e;
   color: #030216;
   border-radius: 5px;
-  font-size: 0.8667;
+  font-size: 0.8667em;
 }
 
 .header-contacts__btn i {
@@ -56,6 +91,12 @@
   max-width: 100%;
 }
 
+@media (max-width: 990px) {
+  .header-logo {
+    margin: 10px auto;
+  }
+}
+
 .header-menu {
   margin: 0;
   padding: 0;
@@ -64,11 +105,24 @@
   justify-content: space-between;
 }
 
+@media (max-width: 990px) {
+  .header-menu {
+    display: none;
+  }
+}
+
 .header-menu li {
-  margin-right: 57px;
+  padding: 10px;
+  border-radius: 5px;
+  padding-left: 27px;
+  padding-right: 27px;
   font-size: 1.0667;
   font-family: 'Proxima Nova Lt';
   font-weight: 600;
+}
+
+.header-menu li.active {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .header-menu li:last-of-type {

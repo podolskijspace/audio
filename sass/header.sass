@@ -1,4 +1,14 @@
+@import "media";
 .header
+    &-menuIcon
+        &::before
+            display: none
+        @media (max-width: $media-mpc)
+            font-size: 20px
+            &::before
+                display: block
+        &:hover
+            cursor: pointer
     &-top
         &__img
             position: absolute
@@ -10,17 +20,24 @@
         &__contacts
             display: flex
             align-items: center
+            @media (max-width: $media-mpc)
+                flex-direction: column
         &__top
             display: flex
             align-items: center
             justify-content: space-between
-            margin-bottom: 30px
+            margin-bottom: 20px
+            @media (max-width: $media-mpc)
+                // flex-direction: column
+                justify-content: space-around
     &-contacts
         &__phone
             font-size: 1.4667em
             text-transform: uppercase
             margin-right: 24px
             color: #ffffff
+            @media (max-width: $media-mpc)
+                margin-right: 0
         &__btn
             display: flex
             align-items: center
@@ -30,7 +47,7 @@
             background: #f78f1e
             color: #030216
             border-radius: 5px
-            font-size: 0.8667
+            font-size: 0.8667em
             & i
                 color: #06041b
                 opacity: 0.44
@@ -43,17 +60,27 @@
         width: 222px
         & img
             max-width: 100%
+        @media (max-width: $media-mpc)
+            margin: 10px auto
     &-menu
         margin: 0
         padding: 0
         display: flex
         align-items: center
         justify-content: space-between
+        @media (max-width: $media-mpc)
+            display: none
         & li
-            margin-right: 57px
+            // margin-right: 57px
+            padding: 10px
+            border-radius: 5px
+            padding-left: 27px
+            padding-right: 27px
             font-size: 1.0667
             font-family: 'Proxima Nova Lt'
             font-weight: 600
+            &.active
+                background: rgba(#ffffff, 0.2)
             &:last-of-type
                 margin-right: 0
             & a

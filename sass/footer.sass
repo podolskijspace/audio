@@ -1,1 +1,98 @@
+@import "media";
 .footer
+    &-row
+        max-width: 250px
+        @media (max-width: $media-pc)
+            margin: 0px auto
+            text-align: center
+        &__title
+            font-size: 22px
+            font-weight: 700
+            font-family: 'Proxima Nova Th'
+            margin-bottom: 18px
+            color: #ffffff
+            display: block
+            &.link
+                margin-bottom: 22px
+        &__list
+            & li
+                font-size: 13px
+                color: #a6a6bb
+                font-weight: 400
+                font-family: 'Proxima Nova Rg'
+                opacity: 0.7
+                margin-bottom: 14px
+                &:last-of-type
+                    margin-bottom: 0
+                & a
+                    color: #ffffff
+    &-desc
+        margin: 0
+        opacity: 0.34
+        font-size: 11px
+        font-weight: 400
+        font-family: 'Proxima Nova Rg'
+    &-btn
+        margin: 0
+        width: 225px
+        margin-bottom: 40px
+        @media (max-width: $media-pc)
+            margin: 10px auto
+    &-phone
+        color: #ffffff
+        font-size: 22px
+        margin-bottom: 15px
+        display: inline-block
+    &-contact
+        &__btn
+            margin: 0
+            margin-bottom: 40px
+            @media (max-width: $media-pc)
+                margin: 10px auto
+    &-socials
+        display: flex
+        align-items: center
+        margin-bottom: 35px
+        @media (max-width: $media-pc)
+            margin: 20px auto
+            width: max-content
+        &__item
+            width: 37px
+            height: 37px
+            margin-right: 5px
+            background: rgba(#ffffff, 0.1)
+            display: flex
+            align-items: center
+            justify-content: center
+            border-radius: 50%
+            color: #ffffff
+            &:last-of-type
+                margin-right: 0
+        
+.bottom
+    &-copy, &-partner, &-address
+        margin: 0
+        font-weight: 400
+        font-family: 'Proxima Nova Rg'
+        color: rgba(#ffffff, 0.8)
+        @media (max-width: $media-pc)
+            text-align: center
+            margin: 10px 0
+        & i
+            color: #f78f1e
+            margin-right: 11px
+    &-copy
+        margin-right: 144px
+        @media (max-width: $media-pc)
+            margin-right: 0
+        & span
+            color: #f78f1e
+    &-partner
+        margin-left: auto
+        display: flex
+        align-items: center
+        @media (max-width: $media-pc)
+            margin: 10px auto
+            width: max-content
+        & img
+            margin-left: 9px

@@ -1,0 +1,127 @@
+@import "media";
+.service
+    &-tab
+        display: none
+    &-info
+        @media (max-width: $media-pc)
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            width: 100%
+    &-navigate
+        width: 241px
+        margin-right: 37px
+        background: rgba(#ffffff, 0.1)
+        flex-shrink: 0
+        padding: 26px
+        padding-left: 20px
+        padding-right: 20px
+        @media (max-width: $media-pc)
+            margin: 10px auto
+        &__title
+            font-size: 1.466em
+            padding-left: 8px
+        &__item
+            color: #ffffff
+            text-decoration: underline
+            font-size: 0,933em
+            font-weight: 400
+            font-family: 'Proxima Nova Rg'
+            color: rgba(#ffffff, 0.8)
+            margin-bottom: 10px
+            padding-top: 5px
+            padding-bottom: 5px
+            display: block
+            width: 100%
+            padding-left: 23px
+            position: relative
+            border-radius: 5px
+            &.active
+                background: #f78f1e
+                color: #26283e
+                text-decoration: unset
+                font-weight: 600
+                font-family: 'Proxima Nova Lt'
+                & .service-navigate__circle
+                    background: #ffffff
+                    &::after
+                        background: #f78f1e
+        &__circle
+            content: ''
+            position: absolute
+            height: 8px
+            width: 8px
+            border-radius: 50%
+            background: #f78f1e
+            left: 8px
+            top: 8px
+            display: flex
+            align-items: center
+            justify-content: center
+            &::after
+                content: ''
+                background: #373340
+                width: 4px
+                height: 4px
+                display: block
+                border-radius: 50%
+    &-head
+        display: flex
+        align-items: center
+        margin-bottom: 30px
+        @media (max-width: $media-pc)
+            width: max-content
+            margin: 10px auto
+        & img
+            margin-right: 27px
+            @media (max-width: $media-pc)
+                margin-right: 7px
+    &-title
+        margin: 0
+        line-height: 46px
+        @media (max-width: $media-pc)
+            font-size: 2.6em
+    &-subtitle
+        font-size: 2,466em
+        font-weight: 300
+        line-height: 37px
+        color: #b8b8cd
+        font-family: 'Proxima Nova ExCn Lt'
+        margin-bottom: 35px
+        @media (max-width: $media-pc)
+            margin-bottom: 10px
+            text-align: center
+    &-desc
+        font-weight: 400
+        margin-bottom: 50px
+        @media (max-width: $media-pc)
+            text-align: center
+        & p
+            margin-bottom: 25px
+            @media (max-width: $media-pc)
+                margin-bottom: 7px
+    &-block
+        display: flex
+        align-items: center
+        max-width: 100%
+        @media (max-width: $media-pc)
+            flex-direction: column
+        & .services-item
+            width: 193px
+            height: 193px
+            margin: 0
+            margin-right: 16px
+            padding-top: 21px
+            padding: 20px
+            justify-content: flex-start
+            @media (max-width: $media-pc)
+                margin: 15px 0
+            &:last-of-type
+                margin: 0
+            & .services-item__title
+                font-size: 1.3334em
+                line-height: 22.14px
+            & .services-item__img
+                margin-bottom: 16px
+                & img
+                    max-width: 80px

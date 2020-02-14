@@ -1,3 +1,4 @@
+@import "media";
 .about
     &__title
     &__intro
@@ -5,11 +6,23 @@
         font-size: 2.1334em
         line-height: 1.1em
         font-weight: 100
+        margin-bottom: 25px
+        & br
+            @media (max-width: $media-pc)
+                display: none
+        @media (max-width: $media-pc)
+            text-align: center
     &__text
         margin: 0 0 40px
         font-family: 'Proxima Nova Rg'
         font-weight: 400
         font-size: 1em
         line-height: 1.5em
+        & br
+            @media (max-width: $media-pc)
+                display: none
+        @media (max-width: $media-pc)
+            text-align: center
+            margin: 10px 0
         &_margin
             margin: 0

@@ -1,0 +1,105 @@
+.portf-info {
+  max-width: 822px;
+}
+
+@media (max-width: 1170px) {
+  .portf-info {
+    margin: 0px auto;
+  }
+}
+
+.portf-title {
+  margin: 0;
+  font-size: 3.1334em;
+  line-height: 46px;
+  max-width: 60%;
+}
+
+@media (max-width: 1170px) {
+  .portf-title {
+    max-width: 100%;
+    text-align: center;
+    margin: 0px auto 15px;
+  }
+}
+
+.portf-subtitle {
+  font-size: 2.13334;
+  font-weight: 300;
+  line-height: 37px;
+  color: #b8b8cd;
+  font-family: 'Proxima Nova Cn Lt';
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1170px) {
+  .portf-subtitle {
+    text-align: center;
+    line-height: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+.portf-desc {
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+
+@media (max-width: 1170px) {
+  .portf-desc {
+    text-align: center;
+    line-height: 12px;
+  }
+}
+
+.portf-count {
+  display: flex;
+  align-items: center;
+  height: 26px;
+  font-size: 2.4em;
+  position: relative;
+  bottom: 8px;
+}
+
+@media (max-width: 1170px) {
+  .portf-count {
+    margin: 15px auto;
+  }
+}
+
+.portf-count__arrow {
+  font-size: 1.0667;
+  color: #f78f1e;
+}
+
+.portf-count__prev {
+  margin-right: 10px;
+}
+
+.portf-count__next {
+  margin-left: 10px;
+}
+
+.portf-count__all {
+  color: #b8b8cd;
+}
+
+.portf-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 26px;
+}
+
+@media (max-width: 1170px) {
+  .portf-head {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+.portf-slider__img {
+  max-width: 100%;
+  margin-bottom: 32px;
+}
